@@ -1,0 +1,31 @@
+main h1, main h2, main p, main a:first-of-type, main a:last-of-type {
+  width: 300px;
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+main h1 {
+  color: #205899; }
+main h2 {
+  color: #34F299; }
+main p {
+  color: green;
+  width: 500px; }
+main a:first-of-type {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid green;
+  color: green;
+  margin-bottom: 2rem; }
+main a:last-of-type {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid #205899;
+  color: #205899; }
+
+/*# sourceMappingURL=master.css.map */

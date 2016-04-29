@@ -1,0 +1,48 @@
+$maincolor: #205899;
+$secondcolor: #34F299;
+$tercercolor: green;
+$backcolor: #f1f1f0;
+
+%centrar {
+  width: 300px;
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin boton($colorboton) {
+  width:100px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid $colorboton;
+  color: $colorboton;
+}
+
+main  {
+
+  h1 {
+    @extend %centrar;
+    color: $maincolor;
+  }
+  h2 {
+    @extend %centrar;
+    color: $secondcolor;
+  }
+
+  p {
+    @extend %centrar;
+    color: $tercercolor;
+    width: 500px;
+  }
+  a:first-of-type {
+    @extend %centrar;
+    @include boton($tercercolor);
+    margin-bottom: 2rem;
+  }
+  a:last-of-type {
+    @extend %centrar;
+    @include boton($maincolor);
+  }
+}
